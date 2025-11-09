@@ -1,0 +1,162 @@
+body{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  margin:0;
+  background-color:#222;
+  background-size:cover;
+  background-position:center;
+  font-size:120%;
+  padding:1em;
+  font-family:"Roboto",sans-serif;
+}
+
+.card{
+  background-color:#000000d0;
+  color:white;
+  padding:2em;
+  border-radius:30px;
+  width:100%;
+  max-width:420px;
+  margin:1em;
+  box-sizing:border-box;
+}
+
+.search{
+  display:flex;
+  justify-content:ceneter;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+
+button{
+  margin:0.5em;
+  border-radius:50%;
+  border:none;
+  height:44px;
+  width:44px;
+  outline:none;
+  background-color:#7c7c7c2b;
+  color:white;
+  cursor:pointer;
+  transition:0.2s ease-in-out;
+  flex-shrink:0;
+}
+
+input.search-bar{
+  border:none;
+  outline:none;
+  padding:0.4em 1em;
+  border-radius:24px;
+  background-color:#7c7c7c2b;
+  color:white;
+  font-family:inherit;
+  font-size:105%;
+  box-sizing:border-box;
+  width:calc(100%-100px);
+}
+
+button:hover{
+  background-color:7c7c7c6b;
+}
+
+/* for phone screen */
+@media (max-width:480px){
+  body{
+    font-size:100%;
+    padding:0.5em;
+  }
+  
+  .card{
+    padding:1.2em;
+    border-radius:18px;
+    max-width:360px;
+  }
+  input.search-bar{
+    width:calc(100%-88px);
+    padding:0.35em 0.9em;
+    font-size:95%;
+  }
+  
+  button{
+    height:40px;
+    width:40px;
+    margin:0.35em;
+  }
+  
+  h1.temp{
+    font-size:1.9rem;
+  }
+  
+  .flex{
+    flex-wrap:wrap;
+    gap:6px;
+  }
+  
+  .icon{
+    width:48px;
+    height:48px;
+  }
+}
+
+/* Very small screen */
+@media (max-width:360px){
+  .search{
+    flex-direction:column;
+    gap:8px;
+    align-items:stretch;
+  }
+  
+  input.search-bar{
+    width:100%;
+  }
+  
+  .search button{
+    align-self:center;
+  }
+  
+  h1.temp{
+    font-size:1.7rem;
+  }
+}
+
+/* for tablets */
+@media (min-width:481px) and (max-width:768px){
+  .card{
+    max-width:500px;
+  }
+  
+  h1.temp{
+    font-size:2.4rem;
+  }
+  
+  input.search-bar{
+    font-size:100%;
+  }
+}
+
+/*Touch devices */
+@media (pointer:coarse){
+  button{
+    height:52px;
+    width:52px;
+  }
+  input.search-bar {
+    padding:0.6em 1em;
+  }
+}
+
+/* for large screens*/
+@media (min-width:1024px){
+  input.search-bar{
+    width:calc(100%-70px);
+    font-size:110%;
+     padding:0.6em 1.2em;
+  }
+  button{
+    heigth:50px;
+    width:50px;
+  }
+}
