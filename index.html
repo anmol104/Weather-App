@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a02e080e5a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" herf="style.css" />
+  
+  <title>Weather APP</title>
+</head>
+<body>
+  <div class="card">
+    <!-- Search Field -->
+    <div class="search"> 
+    
+      <input type="text" class="search-bar" placeholder="Type the City Name" />
+      <button><i class="fa-solid fa-magnifying-glass"></i> </button>
+    </div>
+    
+    
+    <div class="weather loading"> 
+    <!--Weather information -->
+      
+      <h2 class="city">Weather in Norway</h2>
+      <h1 class="temp">51°C</h1>
+      
+      
+      <!-- For cloud Icon and decription -->
+      <div class="flex"> 
+      <img src="https://openweathermap.org/img/wn/04n.png" alt="weather icon" class="icon" />
+        <div class="description">Snowy</div>
+      </div>
+      
+      <!-- Weather Fnformation -->
+      <div class="humidity">Humidity 60%</div>
+      <div class="wind">Wind Speed: 6.2 km/h</div>
+      <div class="feels-like">Feels Like: 35°C</div>
+      <div class="min-temp">Min Temp: 45°C</div>
+      <div class="max-temp">Max Temp: 56°C</div>
+    </div>
+  </div>
+  
+  <script src="script.js"> </script>
+</body>
+</html>
